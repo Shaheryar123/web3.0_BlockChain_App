@@ -1,10 +1,18 @@
- 
+import NavBar from './components/NavBar'
+import Welcome from './components/Welcome'
+import Services from './components/Services'
+import Transactions from './components/Transactions'
+import Footer from './components/Footer'
 const  App=()=> {
   return (
-    <div className='App'>
-      <h1 className='text-3xl font-bold underline'>
-        Helsdad
-      </h1>
+    <div className='min-h-screen'>
+    <div className='gradient-bg-welcome'> 
+ <NavBar />   
+ <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
     </div>
   )
 }
